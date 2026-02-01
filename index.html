@@ -29,7 +29,7 @@
             margin: 30px auto;
             border-radius: 12px;
             box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-            max-width: 700px;
+            max-width: 800px;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
@@ -69,7 +69,20 @@
             text-align: left;
         }
 
-        /* Animations */
+        button {
+            padding: 8px 15px;
+            margin: 5px;
+            border-radius: 6px;
+            border: none;
+            background: #4a5edb;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #3546b3;
+        }
+
         @keyframes fadeIn {
             from {opacity: 0;}
             to {opacity: 1;}
@@ -80,7 +93,6 @@
             to {transform: translateY(0); opacity: 1;}
         }
 
-        /* Floating background circles */
         .bubble {
             position: fixed;
             bottom: -100px;
@@ -97,99 +109,125 @@
 </head>
 <body>
 
-<!-- Floating bubbles -->
 <div class="bubble" style="width:60px;height:60px;left:10%;animation-duration:18s;"></div>
 <div class="bubble" style="width:40px;height:40px;left:40%;animation-duration:22s;"></div>
 <div class="bubble" style="width:80px;height:80px;left:70%;animation-duration:25s;"></div>
 
 <h1>English Learning Materials</h1>
-<p>This website shows more detailed explanations of the slang used in the video.</p>
+<p>This website shows detailed explanations of modern slang used in videos.</p>
+
+<div class="video-section">
+<h2>Project Objective</h2>
+<p style="color:#333;">
+This project aims to help students understand modern English slang used in online videos.
+It provides definitions, examples, and Thai translations to support English learning.
+</p>
+</div>
 
 <div class="video-section">
     <h2>Video 1: Slang Usage</h2>
 
-    <iframe 
-        src="https://www.youtube.com/embed/G3rhzaizkVg"https:
-        allowfullscreen>
-    </iframe>
+    <iframe src="https://www.youtube.com/embed/G3rhzaizkVg" allowfullscreen></iframe>
 
-    <p style="color:#333; text-align:center;">
+    <p style="color:#333;">
         This video shows usages of some modern slang words.
     </p>
 
     <details>
-        <summary>More information and additional example</summary>
-        <p>
-             <p><b>W (Win)</b><br>
-    English: Means success or victory.<br>
-    Thai: หมายถึง ชนะ หรือ ประสบความสำเร็จ<br>
-    Example: That test was a W.<br> 
+        <summary>Slang explanation (English & Thai)</summary>
+
+        <p><b>W (Win)</b><br>
+        English: Means success or victory.<br>
+        Thai: หมายถึง ชนะ หรือ ประสบความสำเร็จ<br>
+        Example: That test was a W.<br> 
                  (สอบครั้งนั้นคือชัยชนะ)<br>
             That goal was a W for our team.<br> 
                  (เป้าหมาขนั้นคือชัยชนะของทีมเรา)<br>
             Passing the interview felt like a W.<br> 
                  (การผ่านสัมภาษณ์รู้สึกเหมือนเป็นไชชนะครั้งใหญ่)<br>
             Getting a discount is always a W.<br> 
-                 (ได้ส่วนลดถือว่าเป็นเรื่องดีมาก)
-    </p>
+                 (ได้ส่วนลดถือว่าเป็นเรื่องดีมาก)</p>
 
-    <p><b>L (Loss)</b><br>
-    English: Means failure or bad result.<br>
-    Thai: หมายถึง แพ้ หรือ ผลลัพธ์ไม่ดี<br>
-    Example: Forgetting my homework was an L.<br> 
+        <p><b>L (Loss)</b><br>
+        English: Means failure or bad result.<br>
+        Thai: หมายถึง แพ้ หรือ ผลลัพธ์ไม่ดี<br>
+        Example: Forgetting my homework was an L.<br> 
                 (ลืมการบ้านคือความผิดพลาด)<br>
             Losing my phone was a big L.<br>
                 (การทำโทรศัพท์หายคือความพลาดครั้งใหญ่)<br>
             Failing the test was an L.<br> 
                 (การสอบตกคือความล้มเหลว)<br>
             Waking up late today was an L.<br> 
-                (การตื่นสายวันนี้คือความพลาด)
-    </p>
+                (การตื่นสายวันนี้คือความพลาด)</p>
 
-    <p><b>GOAT (Greatest Of All Time)</b><br>
-    English: Means the best person ever at something.<br>
-    Thai: หมายถึง สุดยอดที่สุดตลอดกาล<br>
-    Example: She is the GOAT of this game.<br> 
+        <p><b>GOAT</b><br>
+        English: Means the best person ever at something.<br>
+        Thai: หมายถึง สุดยอดที่สุดตลอดกาล<br>
+        Example: She is the GOAT of this game.<br> 
                 (เธอคือที่สุดของเกมนี้)<br>
             Michael Jordan is the GOAT of basketball.<br>
                 (ไมเคิล จอร์แดน คือที่สุดตลอดกาลของบาสเกตบอล)<br>
             She is the GOAT at solving math problems.<br> 
                 (เธอคือที่สุดตลอดกาลด้านการแก้โจทย์คณิตศาสตร์)<br>
             That singer is the GOAT in this genre.<br> 
-                (นักร้องคนนั้นคือที่สุดในแนวนี้)
-    </p>
+                (นักร้องคนนั้นคือที่สุดในแนวนี้)</p>
 
-    <p><b>MID</b><br>
-    English: Means average or not very good, ofthen used in a condescending or dismissivetone.<br>
-    Thai: หมายถึง ธรรมดา ไม่ค่อยดี<br>
-    Example: That song is mid.<br>
+        <p><b>MID</b><br>
+        English: Means average or not very good, ofthen used in a condescending or dismissivetone.<br>
+        Thai: หมายถึง ธรรมดา ไม่ค่อยดี<br>
+        Example: That song is mid.<br>
                 (เพลงนั้นเฉยมาก)<br>
             The food was mid, not worth the price.<br>
                 (อาหารเฉยๆ ไม่คุ้มราคา)<br>
             The game was mid, I expected more.<br>
                 (เกมนั้นเฉยๆ ฉันคาดหวังมากกว่านี้)<br>
             The movie was mid, but the acting was good.<br> 
-                (หนังเรื่องนั้นเฉยๆ แต่การแสดงดี)<br>
-    </p>
+                (หนังเรื่องนั้นเฉยๆ แต่การแสดงดี)<br></p>
 
-    <p><b>SLAY</b><br>
-    English: Means to do something very well or look great, or completely dominate a situation.<br>
-    Thai: หมายถึง ทำได้ดีมาก หรือ ดูดีมาก<br>
-    Example: You slayed that presentation.<br>
+        <p><b>SLAY</b><br>
+        English: Means to do something very well or look great, or completely dominate a situation.<br>
+        Thai: หมายถึง ทำได้ดีมาก หรือ ดูดีมาก<br>
+        Example: You slayed that presentation.<br>
                 (คุณพรีเซนต์ได้ดีมาก)<br>
             You slayed that dance routine.<br>
                 (คุณเต้นได้ดีมากในท่านั้น)<br>
             She slayed her final exam.<br> 
                 (เธอทำข้อสอบปลายภาคได้ดีมาก)<br>
             They slayed the fashion show tonight.<br> 
-                (พวกเขาทำโชว์แฟชั่นคืนนี้ออกมาได้ยอดเยี่ยม)<br>
-    </p>
-        </p>
+                (พวกเขาทำโชว์แฟชั่นคืนนี้ออกมาได้ยอดเยี่ยม)<br></p>
     </details>
+</div>
+
+<div class="video-section">
+<h2>Slang vs Formal English</h2>
+<p style="color:#333;"><b>Slang:</b> That movie was mid.</p>
+<p style="color:#333;"><b>Formal:</b> That movie was average and not impressive.</p>
+<p style="color:#333;"><b>Slang:</b> He is the GOAT.</p>
+<p style="color:#333;"><b>Formal:</b> He is the greatest player of all time.</p>
+</div>
+
+<div class="video-section">
+<h2>Mini Quiz</h2>
+<p style="color:#333;">What does "MID" mean?</p>
+<button onclick="alert('Correct! MID means average or not very good.')">Average / not very good</button>
+<button onclick="alert('Incorrect. Try again.')">Very good</button>
+</div>
+
+<div class="video-section">
+<h2>Why Modern Slang is Important</h2>
+<p style="color:#333;">
+Modern slang helps learners understand real conversations in social media and videos.
+It shows how language changes over time and reflects culture.
+</p>
+</div>
+
+<div class="video-section">
+<h2>Limitations</h2>
+<p style="color:#333;">
+Slang changes quickly and may not be suitable for formal communication.
+Learners should use slang carefully depending on context.
+</p>
 </div>
 
 </body>
 </html>
-
-
-
